@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiLogIn} from 'react-icons/fi'; //feather icons
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -20,7 +21,7 @@ return(
         <input placeholder="Sua ID" />
         <button className="button" type="submit">Entrar</button>
    
-   <a href="/register"><FiLogIn size='14' color='#E02041'   />Não tenho cadastro</a>
+   <Link to="/register"><FiLogIn size='14' color='#E02041'   />Não tenho cadastro</Link>
    
    
     </form>

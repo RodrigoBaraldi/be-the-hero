@@ -46,9 +46,6 @@ function handleLogout(){
     history.push('/');
 }
 
-
-
-
 return(
 
 <div className="profile-container">
@@ -76,7 +73,7 @@ return(
         <strong>CASO:</strong>
         <p>{incident.title}</p>
 
-        <strong>DESCRIÇÃP:</strong>
+        <strong>DESCRIÇÃO:</strong>
         <p>{incident.description}</p>
 
         <strong>VALOR:</strong>

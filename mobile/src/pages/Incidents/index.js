@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { View , FlatList,  Image, Text, TouchableOpacity} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
-import logoImg from '../../assets/logo.png';
+
+
+import ImgLogo from '../../assets/logo.png';
 
 
 
@@ -17,10 +19,15 @@ navigation.navigate('Detail');
 
 
 
+
+
+
+
+
 return(
     <View style={styles.container}>
         <View style={styles.header}>
-            <Image source={logoImg} />
+            <Image source={ImgLogo} ></Image>
             <Text style={styles.headerText}> Total de <Text style={styles.headerTextBold}>0 casos </Text>.</Text>
         </View>
 

@@ -64,7 +64,7 @@ export default StyleSheet.create({
     detailsButton:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItens:'center'
+        alignItens:'center',
     },
 
     detailsButtonText:{

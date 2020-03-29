@@ -17,6 +17,9 @@ export default StyleSheet.create({
         alignItens: 'center',
     },
 
+ 
+
+
     headerText:{
         fontSize:15,
         color: '#737380',

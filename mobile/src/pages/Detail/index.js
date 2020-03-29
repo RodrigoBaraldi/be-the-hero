@@ -1,22 +1,24 @@
 import React from 'react';
 import { View , FlatList,  Image, Text, TouchableOpacity, Linking} from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import {useNavigation,useRoute} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import * as MailComposer from 'expo-mail-composer';
 
 
 import ImgLogo from '../../assets/logo.png';
 import styles from './styles';
+
+
 export default function Detail(){
-const navigation= useNavigation();
-const route = useRoute();
+
+    const navigation= useNavigation();
+   // const route = useRoute();
 
 
+//alert(JSON.stringify(route)); 
 
-alert(JSON.stringify(route)); 
 
-
-const incident = route.params.incident;
+//const incident = route.params.incident;
 
 const message = "Olá ss gostaria de ajudar no caso NOMECASO com o valor de VALOR";
 
@@ -63,13 +65,13 @@ return(
 
         <View style={styles.incident}>
             <Text style={styles.incidentProperty, {marginTop:0}}>ONG:</Text>
-            <Text style={styles.incidentValue}>{incident.name}</Text>
+            <Text style={styles.incidentValue}>nama</Text>
 
             <Text style={styles.incidentProperty}>CASO:</Text>
-            <Text style={styles.incidentValue}>{incident.title}</Text>
+            <Text style={styles.incidentValue}>tit</Text>
 
             <Text style={styles.incidentProperty}>VALOR</Text>
-            <Text style={styles.incidentValue}>{Intl.NumberFormat('pt-BR', {style:'currency', currency:'BRL'}).format(incident.value)}</Text>
+            <Text style={styles.incidentValue}>{Intl.NumberFormat('pt-BR', {style:'currency', currency:'BRL'}).format(10)}</Text>
         </View>
 
 

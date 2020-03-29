@@ -16,7 +16,9 @@ const incident = route.params.incident;
 
 
 
-const message = "Olá ss gostaria de ajudar no caso NOMECASO com o valor de VALOR";
+const message = `Olá ${incident.name} gostaria de ajudar no caso ${incident.title} com o valor de 
+${Intl.NumberFormat('pt-BR', {style:'currency', currency:'BRL'}).format(incident.value)}
+`;
 
 function navigateToIncidents(){
 navigation.navigate('Incidents');
@@ -24,14 +26,14 @@ navigation.navigate('Incidents');
 
 function sendMail(){
 MailComposer.composeAsync({
-    subject: 'Herói do caso: Cadelinha Atropelada',
-    recipients:['sss@sss.com'] ,
-    body: message,
+    subject: `${incident.title}`,
+    recipients: `${incident.email}`,
+    body: message
 })
 }
 
 function sendWhats(){
-        Linking.openURL(`whatsapp://send?phone=5514988172104&text=${message}`);
+        Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
     }
     
 

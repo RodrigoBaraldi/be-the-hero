@@ -14,7 +14,7 @@ export default StyleSheet.create({
     header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignIntens:'center',
+        alignItems:'center',
     },
 
     incident:{

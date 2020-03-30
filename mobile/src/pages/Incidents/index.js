@@ -24,8 +24,8 @@ export default function Incidents(){
             const stylesLogo = StyleSheet.create({
                 stretch: {
                     zIndex: 10,
-                    height:'40px',
-                    width:'95px',
+                    height:40,
+                    width:95,
                 },
               });
 
@@ -56,10 +56,10 @@ export default function Incidents(){
                 const response = await api.get('incidents',{
                 params:{page}
                 });
-                //setIncidents(...incidents,...response.data);
-                setIncidents(response.data);
+                setIncidents(...incidents,...response.data);
+                //setIncidents(response.data);
                 //setTotal(response.headers['x-total-count']);
-                setTotal(10);
+               setTotal(response.headers['x-total-count']);
                setPage(page+1);
                setLoading(false);
                

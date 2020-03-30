@@ -14,11 +14,8 @@ export default StyleSheet.create({
     header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItens: 'center',
+        alignItems:'center',
     },
-
- 
-
 
     headerText:{
         fontSize:15,
@@ -31,7 +28,7 @@ export default StyleSheet.create({
 
     title:{
         fontSize: 30,
-        marginBotton: 16,
+        marginBottom: 16,
         marginTop: 48,
         color: '#13131a',
         fontWeight: 'bold',
@@ -67,7 +64,7 @@ export default StyleSheet.create({
     detailsButton:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItens:'center',
+        alignItems:'center',
     },
 
     detailsButtonText:{
